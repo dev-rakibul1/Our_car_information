@@ -1,0 +1,94 @@
+/* Recet css */
+
+:root {
+  --body__p__color: rgb(128 128 128);
+  --body__color: #fbf5f5;
+}
+
+body {
+  background-color: var(--body__color);
+}
+body p {
+  color: var(--body__p__color);
+}
+.ml-auto {
+  margin-left: auto;
+}
+
+.section-gap {
+  margin-top: 150px;
+}
+/* nav */
+
+/* brand */
+.navbar-brand {
+  text-transform: uppercase;
+  font-weight: 300;
+}
+.nav-link {
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+/* hero section */
+.hero-section {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 100)),
+    url("./images/hero_bg_2.jpg");
+  padding: 150px 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.car-images-box:hover .car-single-item::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: #000;
+  opacity: 0.5;
+  border-radius: 5px;
+}
+.car-images-box:hover .zoom-btn {
+  visibility: visible;
+}
+.zoom-btn {
+  z-index: 50;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  margin-top: 12.5%;
+  visibility: hidden;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                        Media Queries
+/* -------------------------------------------------------------------------- */
+
+@media (max-width: 576px) {
+  .w-sm-100 {
+    width: 100% !important;
+  }
+  .mt-sm-5 {
+    margin-top: 3rem !important;
+  }
+
+  .fs-sm-h {
+    font-size: 4vw !important;
+  }
+
+  .fs-sm-p {
+    font-size: 2.5vw !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .w-md-100 {
+    width: 100% !important;
+  }
+}
